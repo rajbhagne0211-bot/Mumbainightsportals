@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BOMBAY NIGHTS — New Year's Eve | Midnight in Mumbai</title>
+  <meta name="description" content="BOMBAY NIGHTS — New Year's Eve. Dance, eat, celebrate. 31 December, 6:00 PM till after midnight at an AC banquet in Mumbai. Only 200 passes." />
+  <meta name="theme-color" content="#08070B" />
+  <meta property="og:title" content="BOMBAY NIGHTS — New Year's Eve" />
+  <meta property="og:description" content="A night. A city. A celebration. Only 200 passes." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="vendor/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/effects.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.curtain{display:none!important}.rv,.words .wi,.exp .art{opacity:1!important;transform:none!important;clip-path:none!important}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#experience">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <canvas class="sparks" id="sparks" aria-hidden="true"></canvas>
+
+  <div class="curtain" aria-hidden="true"><span class="curtain-brand" data-split>BOMBAY NIGHTS</span></div>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner container" aria-label="Primary">
+      <a class="logo" href="#home">BOMBAY NIGHTS</a>
+      <ul class="nav-links">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#experience" data-nav="experience">Experience</a></li>
+        <li><a href="#highlights" data-nav="highlights">Highlights</a></li>
+        <li><a href="#event-details" data-nav="event-details">Event Details</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <div class="nav-end">
+        <button class="sound-btn nav-sound" type="button" data-sound aria-pressed="false" aria-label="Turn music on"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl">Sound</span></button>
+        <a class="btn btn-gold btn-sm" data-register href="#register">Register<span class="hide-xs">&nbsp;Now</span></a>
+        <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="drawer-scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu">
+    <ul>
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#experience" data-nav="experience">Experience</a></li>
+      <li><a href="#highlights" data-nav="highlights">Highlights</a></li>
+      <li><a href="#event-details" data-nav="event-details">Event Details</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-gold" data-register href="#register">Register Now</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="layer sky" data-speed="0.12"><img src="assets/images/skyline-far.svg" alt="" /></div>
+      <div class="layer lights" aria-hidden="true">
+        <span class="streak s1"></span><span class="streak s2"></span><span class="streak s3"></span>
+        <div class="particles" id="particles"></div>
+      </div>
+      <div class="layer ball" id="disco" aria-hidden="true"><img class="static-ball" src="assets/images/disco-ball.svg" alt="" /></div>
+      <div class="layer near" data-speed="0.04">
+        <img class="gate" src="assets/images/gateway.webp" alt="Gateway of India silhouette" />
+        <img class="skyn" src="assets/images/skyline-near.svg" alt="" />
+      </div>
+      <div class="fade-bottom"></div>
+
+      <div class="hero-content container">
+        <p class="brand" data-split>BOMBAY NIGHTS</p>
+        <p class="tagline">DANCE • EAT • CELEBRATE</p>
+        <h1 aria-label="New Year's Eve">
+          <span class="line" data-split>NEW YEAR'S</span>
+          <span class="line gold" data-split>EVE</span>
+        </h1>
+        <p class="sub">A NIGHT. A CITY. A CELEBRATION.</p>
+        <div class="cta-row">
+          <a class="btn btn-ghost" href="#experience">Explore the Night</a>
+          <a class="btn btn-gold" data-register href="#register">Reserve Your Pass</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#countdown" aria-label="Scroll to the countdown"><span>Scroll</span><i></i></a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>DANCE • EAT • CELEBRATE • DANCE • EAT • CELEBRATE • DANCE • EAT • CELEBRATE • </span>
+        <span>DANCE • EAT • CELEBRATE • DANCE • EAT • CELEBRATE • DANCE • EAT • CELEBRATE • </span>
+      </div>
+    </div>
+
+
+    <!-- MUSIC VIBE -->
+    <section class="section vibe" id="vibe" aria-labelledby="vb-title" data-beat>
+      <div class="container center">
+        <h2 class="h-serif words rv" id="vb-title" data-words>TURN THE NIGHT UP</h2>
+        <p class="vb-sub rv">Tap play and let the lights follow the beat.</p>
+        <div class="viz rv"><canvas id="viz" aria-hidden="true"></canvas></div>
+        <button class="btn btn-gold btn-lg vb-btn rv" type="button" data-sound aria-pressed="false"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl">Play the vibe</span></button>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section countdown" id="countdown" aria-labelledby="cd-title">
+      <div class="container center">
+        <h2 class="h-serif words rv" id="cd-title" data-words>THE COUNTDOWN TO MIDNIGHT</h2>
+        <p class="cd-label rv" id="cd-label"></p>
+        <div class="cd-grid rv" id="cd-grid" role="timer" aria-live="off">
+          <div class="cd-card" data-unit="days"><div class="cd-num"></div><span>DAYS</span></div>
+          <div class="cd-card" data-unit="hours"><div class="cd-num"></div><span>HOURS</span></div>
+          <div class="cd-card" data-unit="minutes"><div class="cd-num"></div><span>MINUTES</span></div>
+          <div class="cd-card" data-unit="seconds"><div class="cd-num"></div><span>SECONDS</span></div>
+        </div>
+        <div class="cd-done" id="cd-done" hidden>
+          <p class="h-display gold">THE NIGHT HAS BEGUN</p>
+          <p class="cd-done-sub">Welcome to Bombay Nights. Dance, eat, celebrate.</p>
+          <div class="confetti" id="confetti" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <h2 class="h-serif words rv" id="exp-title" data-words>THE NIGHT YOU'VE BEEN WAITING FOR</h2>
+
+        <article class="exp rv">
+          <div class="exp-text">
+            <span class="exp-no">01</span>
+            <h3 class="h-display">DANCE</h3>
+            <p>The floor is yours from 6:00 PM, and it keeps going till after midnight.</p>
+          </div>
+          <div class="art tilt"><img loading="lazy" src="assets/images/crowd.jpg" alt="Illustration of a crowd dancing under magenta and gold lights" /><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="sweep" aria-hidden="true"></span></div>
+        </article>
+
+        <article class="exp flip rv">
+          <div class="exp-text">
+            <span class="exp-no">02</span>
+            <h3 class="h-display">EAT</h3>
+            <p>Gather your group and make an evening of it, in an AC banquet in Mumbai.</p>
+          </div>
+          <div class="art tilt"><img loading="lazy" src="assets/images/Eatfood.jpg" alt="Illustration of a banquet hall with chandeliers" /><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="sweep" aria-hidden="true"></span></div>
+        </article>
+
+        <article class="exp rv">
+          <div class="exp-text">
+            <span class="exp-no">03</span>
+            <h3 class="h-display">CELEBRATE</h3>
+            <p>Midnight arrives, and 200 of us are there when it does.</p>
+          </div>
+          <div class="art tilt"><img loading="lazy" src="assets/images/sKY1.jpg" alt="Illustration of fireworks over the Mumbai skyline" /><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="sweep" aria-hidden="true"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="section showcase" id="highlights" aria-labelledby="sh-title">
+      <div class="showcase-gate" aria-hidden="true"><img data-speed="0.18" src="assets/images/scene-gateway.svg" alt="" /></div>
+      <div class="container center">
+        <h2 class="h-serif words rv" id="sh-title" data-words>WELCOME TO MIDNIGHT IN MUMBAI</h2>
+      </div>
+      <div class="swiper showcase-swiper rv" aria-label="Midnight in Mumbai gallery">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/night-life-in-mumbai.jpg" alt="Gateway of India at night" /><figcaption>Gateway of India</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/celebrations.jpg" alt="Mumbai skyline at night" /><figcaption>Mumbai skyline</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/crowd.webp" alt="Disco ball and light beams" /><figcaption>Nightlife atmosphere</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/Eatfood.jpg" alt="Party crowd with raised hands" /><figcaption>Party crowd</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/Crowdscroll.avif" alt="DJ booth with LED screen" /><figcaption>DJ setup</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/DJ.jpg" alt="Banquet interior with chandeliers" /><figcaption>Luxury banquet interiors</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/Eatfood.jpg" alt="Gateway of India at night" /><figcaption>Gateway of India</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/foodmenu.jpg" alt="Mumbai skyline at night" /><figcaption>Mumbai skyline</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/night-life-in-mumbai.jpg" alt="Disco ball and light beams" /><figcaption>Nightlife atmosphere</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/sKY1.jpg" alt="Party crowd with raised hands" /><figcaption>Party crowd</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/celebrations.jpg" alt="DJ booth with LED screen" /><figcaption>DJ setup</figcaption></figure>
+          <figure class="swiper-slide"><img loading="lazy" src="assets/images/atm.jpg" alt="Banquet interior with chandeliers" /><figcaption>Luxury banquet interiors</figcaption></figure>
+        </div>
+        <div class="sw-ui">
+          <button class="sw-prev" type="button" aria-label="Previous slide">&#8592;</button>
+          <div class="swiper-pagination"></div>
+          <button class="sw-next" type="button" aria-label="Next slide">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT DETAILS -->
+    <section class="section details" id="event-details" aria-labelledby="ed-title">
+      <div class="container">
+        <h2 class="h-serif words rv" id="ed-title" data-words>EVENT DETAILS</h2>
+        <div class="rule rv"></div>
+        <div class="d-grid">
+          <div class="d-card rv spot">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>
+            <h3>DATE</h3><p>31st DECEMBER — NEW YEAR'S EVE</p>
+          </div>
+          <div class="d-card rv spot">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.8-6-6.8-11.2a6.8 6.8 0 0 1 13.6 0C18.8 15 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></svg>
+            <h3>VENUE</h3><p>AC BANQUET IN MUMBAI</p><small>(VENUE NAME / AREA REVEALING SOON)</small>
+          </div>
+          <div class="d-card rv spot">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.2V12l3.2 2"/></svg>
+            <h3>TIME</h3><p>6:00 PM – 12:00 AM</p><small>TILL AFTER MIDNIGHT</small>
+          </div>
+          <div class="d-card rv spot">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 20.5c.6-3.4 3.2-5.6 6.5-5.6s5.9 2.2 6.5 5.6M16 5.2a3.4 3.4 0 0 1 0 6.6M18.5 14.9c1.9.8 3 2.9 3 5.6"/></svg>
+            <h3>CAPACITY</h3><p>ONLY 200 PEOPLE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKET -->
+    <section class="section pricing" id="tickets" aria-labelledby="tp-title" data-beat>
+      <div class="container center">
+        <h2 class="h-serif words rv" id="tp-title" data-words>YOUR NIGHT. ONE PASS. ONE PRICE.</h2>
+        <div class="ticket-wrap rv">
+          <div class="ticket" id="ticket">
+            <div class="ticket-main">
+              <p class="t-brand">BOMBAY NIGHTS · NEW YEAR'S EVE</p>
+              <p class="price"><span class="cur">₹</span><span class="amt text-gold" data-count="1500">1500</span></p>
+              <p class="per">PER PERSON</p>
+            </div>
+            <div class="ticket-stub">
+              <p>ONE PASS</p>
+              <a class="btn btn-gold" data-register href="#register">Reserve Your Pass</a>
+            </div>
+            <span class="sheen"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INCLUSIONS -->
+    <section class="section inclusions" id="inclusions" aria-labelledby="in-title">
+      <div class="container">
+        <h2 class="h-serif words rv" id="in-title" data-words>WHAT'S INCLUDED IN THE PASS?</h2>
+        <div class="rule rv"></div>
+        <div class="i-grid" id="i-grid"></div>
+      </div>
+    </section>
+
+    <!-- LIMITED -->
+    <section class="section limited" aria-labelledby="lp-title">
+      <div class="container center">
+        <span class="line-grow"></span>
+        <h2 class="h-display magenta words rv" id="lp-title" data-words>PASSES ARE LIMITED TO 200</h2>
+        <p class="lp-text rv">So if you're in, tell me soon and bring your group. The more of us, the better the night!</p>
+        <span class="line-grow"></span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <section class="section social" aria-labelledby="so-title">
+        <div class="container center">
+          <h2 class="h-serif words rv" id="so-title" data-words>FOLLOW US FOR VENUE REVEAL AND UPDATES</h2>
+          <div class="so-row" id="so-row"></div>
+        </div>
+      </section>
+
+      <section class="section final" aria-labelledby="fc-title">
+        <div class="beams" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="container center">
+          <h2 class="h-display words rv" id="fc-title" data-words>ARE YOU COMING?</h2>
+          <p class="fc-sub rv">LET ME KNOW HOW MANY PASSES YOU NEED!</p>
+          <a class="btn btn-gold btn-lg rv" data-register href="#register">Reserve Your Pass</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="logo">BOMBAY NIGHTS</p>
+      <p>New Year's Eve · 31 December · AC Banquet in Mumbai · Only 200 passes</p>
+    </div>
+  </footer>
+
+  <div class="dock" id="dock">
+    <button class="sound-btn dock-sound" type="button" data-sound aria-pressed="false" aria-label="Turn music on"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></button>
+    <a class="btn btn-gold" data-register href="#register">Reserve Your Pass</a>
+  </div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/swiper-bundle.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/lights.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>
